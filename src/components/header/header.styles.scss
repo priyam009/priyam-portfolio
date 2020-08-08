@@ -1,0 +1,51 @@
+$breakpoint-tablet: 1000px;
+
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .name {
+    height: 100%;
+    padding: 10px;
+    font-size: 28px;
+    border: 5px solid black;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .name {
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .options {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

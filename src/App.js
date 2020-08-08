@@ -1,19 +1,21 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import Header from "./components/header/header.components";
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.state = {
-
-    }
+    this.state = {};
   }
 
   render() {
     return (
-      <div>Priyam's Portfolio</div>
-    )
+      <div>
+        <Header />
+      </div>
+    );
   }
 }
 
