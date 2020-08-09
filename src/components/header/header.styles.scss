@@ -9,9 +9,9 @@ $breakpoint-tablet: 1000px;
 
   .name {
     height: 100%;
-    padding: 10px;
+    padding: 12.5px;
     font-size: 28px;
-    border: 5px solid black;
+    border: 3px solid black;
   }
 
   .options {
@@ -22,8 +22,41 @@ $breakpoint-tablet: 1000px;
     justify-content: flex-end;
 
     .option {
-      padding: 10px 15px;
       cursor: pointer;
+      position: relative;
+      padding: 5px 10px;
+      margin: 0 20px;
+      transition: all 1s;
+      &:after,
+      &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transition: all 1s;
+      }
+      &:after {
+        top: 1px;
+        left: 1px;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+      }
+      &:before {
+        bottom: 1px;
+        right: 1px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+      }
+      &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        &:before,
+        &:after {
+          width: 100%;
+          height: 100%;
+          // border-color:white;
+        }
+      }
     }
   }
 }
