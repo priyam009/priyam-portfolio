@@ -3,14 +3,24 @@
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 12.5%;
-  padding-left: 12.5%;
+  font-family: "Roboto Slab", serif;
+  position: relative;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.particles {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 12.5%;
+  padding-left: 12.5%;
 }
